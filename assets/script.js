@@ -1,0 +1,1 @@
+document.getElementById("title-web").textContent = "HPJ TKJ: Latihan";
