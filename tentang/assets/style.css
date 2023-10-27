@@ -1,0 +1,7 @@
+#image img {
+  height: max-content;
+  max-width: 45%;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: 20px;
+}
