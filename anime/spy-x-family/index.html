@@ -1,29 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title id="title-web">Title Web</title>
-    <link rel="stylesheet" href="/assets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="/assets/include.js"></script>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
   </head>
   <body class="bg-dark" data-bs-theme="dark">
-    <div class="fixed-top">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
-        <div class="container-fluid d-flex justify-content-center">
-          <!-- logo -->
-          <a class="navbar-brand" href="/">
-            <img src="/assets/favicon.png" class="object-fit-contain object-position-center" style="height: 100%;" alt="Logo" width="30" height="24">
-            <span class="navbar-brand ms-4">SMK Katolik St Louis</span>
-            <img src="/assets/osis.png" class="object-fit-contain object-position-center" style="height: 100%;" alt="Logo" width="30" height="24">
-          </a>
-        </div>
-      </nav>
-    </div>
+    <div include="/navbar.html"></div>
 
-    <div class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;background: linear-gradient(rgba(var(--preset-dark-rgb),0.9),rgba(var(--preset-dark-rgb),0.7)),url(./assets/bg.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;">
+    <div
+      class="container-fluid d-flex flex-column justify-content-center align-items-center"
+      style="
+        height: 100vh;
+        background: linear-gradient(
+            rgba(var(--preset-dark-rgb), 0.9),
+            rgba(var(--preset-dark-rgb), 0.7)
+          ),
+          url(./assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
       <h1 class="h1 text-white text-center">ANIME</h1>
       <h3 class="h3 text-white text-center">SPY X FAMILY</h3>
     </div>
@@ -31,18 +41,45 @@
     <div class="container-xl my-5">
       <h1 class="h1">Episodes:</h1>
       <div class="container-fluid d-flex justify-content-start">
-        <button class=" btn btn-outline-primary mt-3 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#Season1" aria-controls="Season1" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="btn btn-outline-primary mt-3 me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Season1"
+          aria-controls="Season1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <h3 class="h3 m-0">Season 1</h3>
         </button>
-        <button class=" btn btn-outline-primary mt-3 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#Season1Part2" aria-controls="Season1Part2" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="btn btn-outline-primary mt-3 me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Season1Part2"
+          aria-controls="Season1Part2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <h3 class="h3 m-0">Season 1 Part 2</h3>
         </button>
-        <button class=" btn btn-outline-primary mt-3 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#Season2" aria-controls="Season2" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="btn btn-outline-primary mt-3 me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#Season2"
+          aria-controls="Season2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <h3 class="h3 m-0">Season 2</h3>
         </button>
       </div>
       <div class="container-fluid">
-        <div class="collapse navbar-collapse border-bottom border-secondary" id="Season1">
+        <div
+          class="collapse navbar-collapse border-bottom border-secondary"
+          id="Season1"
+        >
           <div class="container-fluid">
             <a class="btn btn-primary px-4 py-2 me-2 my-2" href="./s1/1">1</a>
             <a class="btn btn-primary px-4 py-2 me-2 my-2" href="./s1/2">2</a>
@@ -60,52 +97,189 @@
         </div>
       </div>
       <div class="container-fluid">
-        <div class="collapse navbar-collapse border-bottom border-secondary" id="Season1Part2">
+        <div
+          class="collapse navbar-collapse border-bottom border-secondary"
+          id="Season1Part2"
+        >
           <div class="container-fluid">
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/1">1</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/2">2</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/3">3</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/4">4</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/5">5</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/6">6</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/7">7</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/8">8</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/9">9</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/10">10</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/11">11</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/12">12</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s1p2/13">13</a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/1"
+            >
+              1
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/2"
+            >
+              2
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/3"
+            >
+              3
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/4"
+            >
+              4
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/5"
+            >
+              5
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/6"
+            >
+              6
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/7"
+            >
+              7
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/8"
+            >
+              8
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/9"
+            >
+              9
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/10"
+            >
+              10
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/11"
+            >
+              11
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/12"
+            >
+              12
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s1p2/13"
+            >
+              13
+            </a>
           </div>
         </div>
       </div>
       <div class="container-fluid">
-        <div class="collapse navbar-collapse border-bottom border-secondary" id="Season2">
+        <div
+          class="collapse navbar-collapse border-bottom border-secondary"
+          id="Season2"
+        >
           <div class="container-fluid">
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s2/1">1</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s2/2">2</a>
-            <a class="btn btn-primary px-4 py-2 me-2 my-2 disabled" href="./s2/3">3</a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s2/1"
+            >
+              1
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s2/2"
+            >
+              2
+            </a>
+            <a
+              class="btn btn-primary px-4 py-2 me-2 my-2 disabled"
+              href="./s2/3"
+            >
+              3
+            </a>
           </div>
         </div>
       </div>
       <h1 class="h1 mt-3">Pesan Moral:</h1>
       <ul>
-        <li><strong>Kerja Sama dan Ketergantungan:</strong> Anime ini menekankan pentingnya kerja sama dan ketergantungan di antara para karakter utama. Mereka harus bekerja sama dalam mengendalikan Franxx, menunjukkan bahwa kerja tim sangat penting dalam menghadapi tantangan besar.</li>
-        <li><strong>Kebebasan dan Identitas:</strong> Karakter utama menghadapi pertanyaan tentang kebebasan dan identitas mereka. Pesan moralnya adalah tentang mencari jati diri dan meraih kebebasan dalam situasi yang menghambat.</li>
-        <li><strong>Perjuangan Melawan Ancaman Bersama:</strong> Di dunia pasca-apokaliptik, manusia bersatu untuk melawan ancaman Klaxosaur. Ini mencerminkan pesan moral tentang persatuan dalam menghadapi bahaya bersama.</li>
-        <li><strong>Pertanyaan tentang Moralitas dan Etika:</strong> Beberapa episode mengeksplorasi isu-isu moral dan etika, seperti pertentangan antara kebijakan manusia dan efek negatif pada dunia.</li>
-        <li><strong>Cinta dan Hubungan Manusia:</strong> Anime ini juga mengangkat tema cinta, hubungan antar-manusia, dan pengorbanan demi orang yang dicintai. Ini menggambarkan pentingnya mencintai dan peduli satu sama lain.</li>
+        <li>
+          <strong>Kerja Sama dan Ketergantungan:</strong>
+          Anime ini menekankan pentingnya kerja sama dan ketergantungan di
+          antara para karakter utama. Mereka harus bekerja sama dalam
+          mengendalikan Franxx, menunjukkan bahwa kerja tim sangat penting dalam
+          menghadapi tantangan besar.
+        </li>
+        <li>
+          <strong>Kebebasan dan Identitas:</strong>
+          Karakter utama menghadapi pertanyaan tentang kebebasan dan identitas
+          mereka. Pesan moralnya adalah tentang mencari jati diri dan meraih
+          kebebasan dalam situasi yang menghambat.
+        </li>
+        <li>
+          <strong>Perjuangan Melawan Ancaman Bersama:</strong>
+          Di dunia pasca-apokaliptik, manusia bersatu untuk melawan ancaman
+          Klaxosaur. Ini mencerminkan pesan moral tentang persatuan dalam
+          menghadapi bahaya bersama.
+        </li>
+        <li>
+          <strong>Pertanyaan tentang Moralitas dan Etika:</strong>
+          Beberapa episode mengeksplorasi isu-isu moral dan etika, seperti
+          pertentangan antara kebijakan manusia dan efek negatif pada dunia.
+        </li>
+        <li>
+          <strong>Cinta dan Hubungan Manusia:</strong>
+          Anime ini juga mengangkat tema cinta, hubungan antar-manusia, dan
+          pengorbanan demi orang yang dicintai. Ini menggambarkan pentingnya
+          mencintai dan peduli satu sama lain.
+        </li>
       </ul>
       <h1 class="h1 mt-3">Hubungannya pada 5 keutamaan Santo Vincentius:</h1>
       <ul>
-        <li><strong>Kerendahan Hati (Humility):</strong> Dalam anime, karakter-karakter utama memahami pentingnya kerendahan hati saat mereka harus bekerja sama dan mengakui bahwa mereka tidak bisa menghadapi ancaman Klaxosaur sendirian. Hal ini mencerminkan kerendahan hati dalam mengakui keterbatasan dan bergantung pada orang lain.</li>
-        <li><strong>Kesederhanaan (Simplicity):</strong> Pesan moral dalam anime juga menyoroti pentingnya kesederhanaan dalam hidup. Di dunia pasca-apokaliptik yang keras, karakter-karakter ini memahami bahwa kesederhanaan dalam hubungan dan harapan mereka bisa membawa kedamaian. Kesederhanaan ini tercermin dalam hubungan mereka.</li>
-        <li><strong>Kelemah Lembutan (Gentleness):</strong> Karakter-karakter di anime ini menghadapi konflik dan ketegangan, tetapi mereka juga menunjukkan kelemah lembutan dalam hubungan mereka. Ini menekankan bahwa dalam menghadapi situasi yang sulit, kelembutan dan penghargaan terhadap orang lain adalah penting.</li>
+        <li>
+          <strong>Kerendahan Hati (Humility):</strong>
+          Dalam anime, karakter-karakter utama memahami pentingnya kerendahan
+          hati saat mereka harus bekerja sama dan mengakui bahwa mereka tidak
+          bisa menghadapi ancaman Klaxosaur sendirian. Hal ini mencerminkan
+          kerendahan hati dalam mengakui keterbatasan dan bergantung pada orang
+          lain.
+        </li>
+        <li>
+          <strong>Kesederhanaan (Simplicity):</strong>
+          Pesan moral dalam anime juga menyoroti pentingnya kesederhanaan dalam
+          hidup. Di dunia pasca-apokaliptik yang keras, karakter-karakter ini
+          memahami bahwa kesederhanaan dalam hubungan dan harapan mereka bisa
+          membawa kedamaian. Kesederhanaan ini tercermin dalam hubungan mereka.
+        </li>
+        <li>
+          <strong>Kelemah Lembutan (Gentleness):</strong>
+          Karakter-karakter di anime ini menghadapi konflik dan ketegangan,
+          tetapi mereka juga menunjukkan kelemah lembutan dalam hubungan mereka.
+          Ini menekankan bahwa dalam menghadapi situasi yang sulit, kelembutan
+          dan penghargaan terhadap orang lain adalah penting.
+        </li>
       </ul>
     </div>
 
-    <footer></footer>
+    <div include="/footer.html"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="/assets/script.js"></script>
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>
